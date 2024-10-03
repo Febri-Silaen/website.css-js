@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(10, 5, 24);
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 25px 12%;
+            display: flex;
+            justify-content: space-between;
+            z-index: 100;
+            background-color: black;
+        }
+
+        .logo {
+            font-size: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            color: orange;
+        }
+
+        .navbar a {
+            font-size: 14px;
+            text-decoration: none;
+            color: white;
+            margin-left: 10px;
+            transition-duration: 0.3s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: red;
+        }
+
+        footer {
+            background-color: #10d43a;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        section {
+            padding: 20px;
+            margin: 50px;
+            border: 5px solid rgb(3, 164, 228);
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+          
+        }
+
+        .fade-in {
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transisi untuk opacity dan transform */
+        }
+
+        .fade-in.active {
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <a href="" class="logo">Logo</a>
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="experience.html">Pengalaman</a>
+        <a href="sosmed.html">Sosmed</a>
+    </nav>
+</header>
+
+<br><br>
+
+<div class="section-1">
+    <section class="fade-in">
+        <h2>Pendahuluan</h2>
+        <p>Nama saya Febri, usia 18 tahun, saya bersemangat untuk belajar dan mengeksplorasi hal-hal baru. Saya sangat termotivasi dan berdedikasi untuk memperluas pengetahuan dan keterampilan saya. Saya percaya pada pembelajaran berkelanjutan sebagai sarana untuk tetap relevan dan berkontribusi secara efektif pada lingkungan kerja apa pun.
+           <em><b>"Hari di mana kita berhenti belajar adalah hari di mana kita akan memulai kegagalan"</b></em>
+        </p>
+    </section>
+
+    <section class="fade-in">
+        <h2>Pendidikan</h2>
+        <ul>
+            <li><strong>SD:</strong> SDN 173609 Batumanumpak</li>
+            <li><strong>SMP:</strong> SMPN 2 Nassau</li>
+            <li><strong>SMK:</strong> YP Raksana Medan</li>
+            <li><strong>KULIAH:</strong> IT-DEL</li>
+        </ul>
+    </section>
+
+    <section class="fade-in">
+        <h2>Keterampilan</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Kerja Tim</li>
+            <li>Kepemimpinan</li>
+            <li>Berbicara di Depan Umum</li>
+        </ul>
+    </section>
+
+    <section class="fade-in">
+        <h2>Alamat</h2>
+        <p>Batumanumpak, Sumatera Utara</p>
+    </section>
+
+    <section class="fade-in">
+        <h2>Kontak</h2>
+        <ul>
+            <li><strong>Telepon:</strong> +6281261537251</li>
+            <li><strong>Email:</strong> Febrisialen3103@gmail.com</li>
+        </ul>
+    </section>
+</div>
+
+<br><br>
+<script src="about.js"></script>
+
+</body>
+</html>
